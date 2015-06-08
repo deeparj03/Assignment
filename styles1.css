@@ -1,0 +1,139 @@
+body
+{
+   padding: 10px 20px;
+    
+}
+#image1
+{
+    position: relative;
+   top: 100%;
+   left: 50%;
+   width: 500px;
+   height: 150px;
+   margin-top: 0px; /* Half the height */
+   margin-left: -250px; /* Half the width */
+    
+   
+}
+
+#all {
+margin: 0 auto;
+width: 800px;
+}
+#header { 
+padding: 0 0 3px 0;
+}
+#header h1 {
+font-size: 30px;
+font-weight:bold;
+letter-spacing: 2px;
+padding: 0px 0 3px 3px;
+font-family:Georgia;
+}
+#header h2 {
+color: #ccc;
+font-size: 15px;
+font-weight: 100;
+padding: 3px 0 0 2px;
+line-height: 0px;
+}
+
+img { border: none; }
+
+#content {
+padding: 10px 20px;
+margin: 0 auto;
+width: 810px;
+}
+
+#footer {
+background: #eee;
+border-top: 3px solid #57626a;
+margin-top: 20px;
+text-align: center;
+color: #333;
+font-size: 12px;
+padding: 10px;
+}
+
+
+
+
+
+.third-level-menu
+{
+    position: absolute;
+    top: 0;
+    right: -150px;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.third-level-menu > li
+{
+    height: 30px;
+    background: #CCFFFF;
+}
+.third-level-menu > li:hover { background: #FFFF66; }
+
+.second-level-menu
+{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 180px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.second-level-menu > li
+{
+    position: relative;
+    height: 30px;
+    background: #999999;
+}
+.second-level-menu > li:hover { background: #CCCCCC; }
+
+.top-level-menu
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-level-menu > li
+{
+    position: relative;
+    float: left;
+    height: 30px;
+    width: 160px;
+    background: #CCFFFF;
+}
+.top-level-menu > li:hover { background: #66FF33; }
+
+.top-level-menu li:hover > ul
+{
+    /* On hover, display the next level's menu */
+    display: inline;
+}
+
+
+/* Menu Link Styles */
+
+.top-level-menu a /* Apply to all links inside the multi-level menu */
+{
+    font: bold 14px Georgia, Helvetica, sans-serif;
+    color: #FF0000;
+    text-decoration: none;
+    padding: 0 0 0 10px;
+
+    /* Make the link cover the entire list item-container */
+    display: block;
+    line-height: 30px;
+}
+.top-level-menu a:hover { color: #99CCFF; }
